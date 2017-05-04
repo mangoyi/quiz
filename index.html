@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>病例详情页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="index.css"  style="text/style">
+  </head>
+  <body>
+    <div class="container">
+          <div class="g-header">
+            <div class="header">
+              <span class="left"><img src="icon/left.png" alt=""></span><strong>病例详情</strong><a href="#" class="report">投诉</a></h2>
+            </div>
+          </div>
+          <div class="g-main">
+            <div class="main1">
+                <div class="m-person">
+                    <div class="person">
+                      <i class="person-pic"></i>
+                      <p class="person-name">欧颖颖</p>
+                      <p class="person-arc">安必平</p>
+                      <a href="#" class="person-focus">已关注</a>
+                    </div>
+                </div>
+                <div class="m-img">
+                  <img src="img/main.jpg" alt="图片加载失败">
+                </div>
+                <div class="m-answer">
+                  <p class="ans-content">好</p>
+                  <p class="ans-number"><span> 5 </span>阅读</p>
+                  <span class="assort">软组织</spn>
+                </div>
+            </div>
+          </div>
+          <div class="g-footer">
+              <div class="footer">
+                  <div class="add footer-same">
+                    <img src="icon/add.png" alt="failer"><span>添加问答</span>
+                  </div>
+                  <div class="collect footer-same">
+                    <img src="icon/collect.png" alt="failer"><span>1收藏</span>
+                  </div>
+                  <div class="attention footer-same">
+                    <img src="icon/attention.png" alt="failer"><span>0关注</span>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <script>
+        //获取屏幕高度
+        var body = document.getElementsByTagName('body')[0];
+        var clientHeight = document.documentElement.clientHeight;
+        body.style.height = clientHeight + 'px';
+        body.style.overflow = 'hidden' ;
+        var footer = document.getElementsByClassName('g-footer')[0];
+        footer.style.bottom  = 0 ;  //将容器定位到底部
+
+    </script>
+  </body>
+</html>
